@@ -1,0 +1,68 @@
+body {
+    margin: 20px;
+    font-family: cursive;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #f7ede2;
+    color: #4c956c;
+    border-bottom: 6px solid #b5838d;
+    border-radius: 5%;
+    text-shadow: 1px 1.5px;
+    
+}
+.card > img {
+    border: 5px dotted #4c956c;
+    border-radius:50%;
+    opacity: 0.8;
+    transition: (opacity,border-radius) 0.2s;
+    transition-delay: 0.3s;
+    }
+.card > img:hover{
+    border-radius: 30%;
+    opacity: 1;
+}
+.border-blue {
+    border: 1px dotted blue;
+}
+.card > div {
+  animation: myAnimation 8s linear 1s infinite;
+   overflow: hidden;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  25% {
+    opacity: 0.5;
+    transform: translateX(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+   62.5% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
